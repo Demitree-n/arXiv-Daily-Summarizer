@@ -3,7 +3,7 @@ name: Daily arXiv Paper Digest
 on:
   schedule:
     # Run at 16:00 UTC daily (00:00 Beijing Time)
-    - cron: '*/3 * * * *'
+    - cron: '0 16 * * *'
   
   # Allow manual workflow trigger
   workflow_dispatch:
