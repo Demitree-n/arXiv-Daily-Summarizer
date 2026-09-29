@@ -12,9 +12,21 @@ from difflib import SequenceMatcher
 # ========== Configuration ==========
 
 # arXiv search configuration
-CATEGORIES = ['cs.AI', 'cs.CV', 'cs.CL']  # Research areas of interest
-MAX_RESULTS = 5  # Number of papers to send daily
-MIN_PAPERS_PER_CATEGORY = 1  # Minimum papers per category to ensure balance
+CATEGORIES = [
+    'cs.AI',      # Artificial Intelligence
+    'cs.CL',      # Computation and Language / LLM
+    'cs.LG',      # Machine Learning
+    'cs.IR',      # Information Retrieval / RAG / memory retrieval
+    'cs.NE',      # Neural and Evolutionary Computing
+    'cs.MA',      # Multiagent Systems
+    'cs.RO',      # Robotics / Embodied AI
+    'cs.CV',      # Computer Vision / Multimodal / VLA
+    'cs.HC',      # Human-Computer Interaction / Human-AI
+    'stat.ML',    # Machine Learning
+    'q-bio.NC',   # Neurons and Cognition
+]
+MAX_RESULTS = 15  # Number of papers to send daily
+MIN_PAPERS_PER_CATEGORY = 0  # Minimum papers per category to ensure balance
 
 # Language configuration
 # Supported values: 'zh' (Chinese), 'en' (English), 'both' (Bilingual)
@@ -22,8 +34,8 @@ EMAIL_LANGUAGE = os.environ.get('EMAIL_LANGUAGE', 'zh')  # Default to Chinese
 
 # DeepSeek API configuration
 DEEPSEEK_API_KEY = os.environ.get('DEEPSEEK_API_KEY')
-DEEPSEEK_BASE_URL = 'https://api-inference.modelscope.cn/v1'
-DEEPSEEK_MODEL = 'deepseek-ai/DeepSeek-V3.2-Exp'
+DEEPSEEK_BASE_URL = 'https://api.deepseek.com'
+DEEPSEEK_MODEL = 'deepseek-flash'
 
 # Email configuration
 SENDER_EMAIL = os.environ.get('SENDER_EMAIL')
