@@ -25,7 +25,7 @@ CATEGORIES = [
     'stat.ML',    # Machine Learning
     'q-bio.NC',   # Neurons and Cognition
 ]
-MAX_RESULTS = 15  # Number of papers to send daily
+MAX_RESULTS = 5  # Number of papers to send daily
 MIN_PAPERS_PER_CATEGORY = 0  # Minimum papers per category to ensure balance
 
 # Language configuration
